@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.buttons {
+    margin: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#output {
+    margin-top: 300px;
+    margin-left: 700px;
+    padding: 300px;
+    border: 10px solid #dacdcd;
+    background-color: #5d685e;
+}
+@import url(http://fonts.googleapis.com/css?family=Trocchi);
+
+body {
+  background-color: #90908c;
+  margin: 0;}
+
+form {
+  font-family: trocchi, georgia, times, serif;
+  max-width: 1000px;
+  margin: 0 auto 0 auto;}
+
+.one-third, .two-thirds {
+  background-color: #f8584a;
+  border: 12px solid #fff;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  overflow: hidden;}
+
+.one-third {width: 268px;}
+.two-thirds {width: 530px;}
+.three-thirds {width: 700px;}
+.one-third fieldset {border: none; margin: 0.5em;}
+.two-thirds fieldset {border: none; margin: 2.5em;}
+.three-thirds fieldset {border: blueviolet; margin: 10em;}
+
+.container .one-third, .container .two-thirds {height: 35em;}
+.login .one-third, .login .two-thirds { height: 40em;}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  margin: .05em auto 2em auto;
+  display: block;}
+
+h2 {
+  font-weight: bold;
+  margin: 0;}
+
+p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  margin: 1em;}
+
+.welcome {text-align: center;}
+p.intro {margin: 2em;}

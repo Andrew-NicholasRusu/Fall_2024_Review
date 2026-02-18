@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is just a test - For loop</h1>
+
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+    </ul>
+
+    <script>
+        let colors = ["pink", "yellwo", "green"]
+
+        document.write("<ul>")
+        document.write("<li> element1 </li>")
+
+        for(let i = 0; i < 3; i++) {
+            document.write("<li> element" + (i+2) + "</li>")
+        }
+
+        document.write("</ul>")
+
+        document.write("<ul>")
+        for(let index in colors) {
+            document.write("<li>" + colors[index] + "</li>")
+        }
+        document.write("</ul>")
+    </script>
+    
+</body>
+</html>
