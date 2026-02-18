@@ -1,0 +1,304 @@
+/* Ensures that padding and borders are included in the element’s total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Makes HTML5 semantic elements block-level elements to ensure proper layout and structure */
+header, nav, main, footer {
+    display: block;
+}
+
+/* Sets the overall body background color, background image, text color, and font family */
+body {
+    background-color: #FFFFFF; /* Sets the background color to white */
+    background-image: url(background.jpg); /* Applies a background image to the body */
+    color: #666666; /* Sets the text color to a dark gray */
+    font-family: Verdana, Arial, sans-serif; /* Specifies a sans-serif font stack for text */
+}
+
+/* Wrapper for the main content: centers content and sets its width with constraints */
+#wrapper {
+    width: 80%; /* Limits the wrapper's width to 80% of the viewport */
+    margin-right: auto; /* Centers the wrapper horizontally */
+    margin-left: auto; /* Centers the wrapper horizontally */
+    background-color: #90C7E3; /* Gives the wrapper a light blue background */
+    min-width: 700px; /* Ensures the wrapper does not shrink below 700px */
+    max-width: 1024px; /* Limits the maximum width to 1024px */
+    box-shadow: 3px 3px 3px #333333; /* Adds a subtle shadow to create a 3D effect */
+}
+
+/* Styles the header section with a dark background and white text */
+header {
+    background-color: #000033; /* Sets a dark blue background color */
+    color: #FFFFFF; /* Changes the text color to white */
+    font-family: Georgia, serif; /* Uses a serif font for the header text */
+}
+
+/* Styles the main heading */
+h1 {
+    line-height: 200%; /* Doubles the line height for readability */
+    background-image: url(sunset.jpg); /* Adds a background image to the header */
+    background-position: right; /* Aligns the background image to the right */
+    background-repeat: no-repeat; /* Ensures the background image doesn’t repeat */
+    padding-left: 20px; /* Adds padding to the left of the heading */
+    height: 72px; /* Sets a fixed height for the header */
+    margin-bottom: 0; /* Removes the bottom margin of the header */
+}
+
+/* Navigation bar styling */
+nav {
+    font-weight: bold; /* Makes the text in the navigation bold */
+    padding: 5px; /* Adds padding around the navigation bar */
+    float: left; /* Aligns the navigation to the left of the page */
+    width: 160px; /* Sets a fixed width for the navigation bar */
+    padding: 20px 5px 0 20px; /* Adds specific padding values to top, left, right, and bottom */
+}
+
+/* Removes the underline from all links inside the navigation bar */
+nav a {
+    text-decoration: none; /* Removes the default underline from links */
+}
+
+/* Styling for unvisited links */
+nav a:link {
+    color: #000033; /* Sets the color of unvisited links to dark blue */
+}
+
+/* Styling for visited links */
+nav a:visited {
+    color: #344873; /* Sets the color of visited links to a slightly lighter blue */
+}
+
+/* Changes the color of links when hovered */
+nav a:hover {
+    color: #FFFFFF; /* Changes the link color to white when hovered */
+}
+
+/* Removes bullet points from the unordered list and resets margins and padding */
+nav ul {
+    list-style-type: none; /* Removes default bullet points */
+    margin: 0; /* Resets default margin */
+    padding-left: 0; /* Removes left padding */
+}
+
+/* Main content styling */
+main {
+    padding-left: 20px; /* Adds padding to the left of the content */
+    padding-right: 20px; /* Adds padding to the right of the content */
+    display: block; /* Ensures the main section behaves as a block element */
+    background-color: #FFFFFF; /* Sets the background color to white */
+    margin-left: 170px; /* Adds a left margin to push the content away from the navigation */
+    padding-top: 1px; /* Adds a small amount of padding at the top */
+    padding-bottom: 1px; /* Adds a small amount of padding at the bottom */
+}
+
+/* Hero image section on the home page */
+#homehero {
+    height: 300px; /* Sets a fixed height for the hero image */
+    background-image: url(coast.jpg); /* Applies a background image */
+    background-size: 100% 100%; /* Ensures the background image covers the entire hero section */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    margin-left: 170px; /* Aligns the hero section with the main content */
+}
+
+/* Styling for secondary headings */
+h2 {
+    color: #3399CC; /* Sets the text color to a light blue */
+    font-family: Georgia, serif; /* Uses a serif font for the subheading */
+}
+
+/* Styling for the "resort" class, typically used to highlight resort names */
+.resort {
+    color: #000033; /* Sets the text color to dark blue */
+    font-size: 1.2em; /* Increases the font size slightly */
+}
+
+/* Footer section styling */
+footer {
+    font-size: .70em; /* Reduces the font size in the footer */
+    font-style: italic; /* Makes the footer text italic */
+    text-align: center; /* Centers the footer content */
+    padding: 10px; /* Adds padding around the footer content */
+    background-color: #FFFFFF; /* Sets the background color to white */
+    margin-left: 170px; /* Aligns the footer with the main content */
+}
+
+/* Mobile-specific phone number: hidden on larger screens */
+#mobile {
+    display: none; /* Hides the mobile phone number on larger screens */
+}
+
+/* Desktop-specific phone number: visible on larger screens */
+#desktop {
+    display: inline; /* Displays the desktop phone number */
+}
+
+
+/* -------------------------EXAM SECTION-------------------------------- */
+
+/* ------------------------TABLET SECTION------------------------------- */
+@media only screen and (max-width: 1024px) {
+
+    /* Body adjustments for smaller screens */
+    /* Hint: Consider removing margins or padding for a full-screen view. 
+       Think about how to handle the background image for smaller devices. */
+    body {
+    margin-left: 0px;   
+    }
+
+    /* Wrapper adjustments for smaller screens */
+    /* Hint: The wrapper should adjust to the screen width. 
+       Consider whether you still need fixed width and shadows here. */
+    #wrapper {
+    width: auto;    
+    }
+
+    /* Header adjustments for smaller screens */
+    /* Hint: The header might need to be more compact. 
+       Think about reducing margins and font sizes for readability. */
+    h1 {font-size: 200%;
+        padding-left: 35px;}
+
+    /* Navigation adjustments for smaller screens */
+    /* Hint: Stacking navigation items vertically could improve usability 
+       on smaller screens. Consider removing floats or adjusting widths. */
+    nav {
+    float: none; width: auto; 
+    font-size: 17px; 
+    padding: 0px 20px 0px 30px;
+    
+    }
+
+    /* Navigation list items adjustments */
+    /* Hint: Switching to inline-block or block display might help with horizontal 
+       or vertical layouts. */
+    nav li {
+    display: inline-block; padding:0.5em;    
+    }
+
+    /* Navigation links adjustments */
+    /* Hint: Make sure the links are easy to tap on tablet screens. 
+       Increasing padding or adjusting font size could help. */
+    nav a {
+    border-style: none;   
+    }
+
+    /* Main content adjustments for smaller screens */
+    /* Hint: Consider reducing padding or margins to maximize space for content 
+       on smaller screens. */
+    main {
+    margin-left: 0; 
+    padding-top: 15px;  
+    
+    }
+
+    /* Footer adjustments for smaller screens */
+    /* Hint: A compact footer might improve layout. 
+       Think about reducing margins or font sizes. */
+    footer {
+    font-size: 70%;
+    text-align: center;
+    clear: right;
+    padding: 20px;
+        
+    }
+
+    /* Hero image adjustments for smaller screens */
+    /* Hint: The hero image could be resized or adjusted for smaller screens. 
+       Consider how much space it should occupy. */
+    #homehero {
+    background-image: url(coast.jpg);
+    margin-right: 0px; 
+    margin-left: 0px;
+    background-size: 100% 100%;  
+    height: 300px; 
+    }
+}
+
+
+/* ------------------------MOBILE SECTION------------------------------- */
+@media only all and (max-width: 768px) {
+
+    /* Heading adjustments for smaller screens */
+    /* Hint: For mobile devices, smaller font sizes and dynamic heights are 
+       more effective. Look into reducing padding. */
+    h1 {
+    font-size: 180%;  
+    padding-left: 10px; 
+    height: auto;
+    
+    }
+
+    /* Navigation adjustments for smaller screens */
+    /* Hint: Navigation should be easy to interact with. 
+       Think about displaying the links in a vertical list for mobile screens. */
+    nav {
+    float: none; width: 40px; 
+    font-size: 20px;
+    padding: 0px 60px 0px 10px
+     
+    }
+
+    /* Navigation links adjustments for smaller screens */
+    /* Hint: For mobile, making the links block elements might improve usability. 
+       Adding borders or increasing padding can help separate the links. */
+    nav a {
+    display: block; padding: 0.5em 0;
+    border-bottom: 2px ridge #00005D; 
+    padding-bottom: 0px;  
+    }
+
+    /* Navigation list adjustments for smaller screens */
+    /* Hint: Removing margin and padding will help make the navigation compact 
+       and fit better on mobile devices. */
+    nav ul {
+    margin-block-end: 0%;
+    padding:0;    
+    }
+
+    /* Navigation list items adjustments for smaller screens */
+    /* Hint: Displaying the list items as blocks could help stack them vertically 
+       for a mobile-friendly layout. */
+    nav li {
+    padding: 0;    
+    }
+
+    /* Main content adjustments for smaller screens */
+    /* Hint: On mobile, main content should have minimal padding and a smaller 
+       font size for better readability. */
+    main {
+    padding-left: 10px;
+    padding-top: 1px;   
+    }
+
+    /* Hide hero image for very small screens */
+    /* Hint: Consider hiding large images on mobile devices to save space 
+       and improve performance. */
+    #homehero {
+    background-image: block;
+    background-size: 0% 0%;
+    height: 10px;
+
+    }
+
+    /* Footer adjustments for smaller screens */
+    /* Hint: A more compact footer with reduced padding or margins could be 
+       more appropriate for mobile screens. */
+    footer {
+        text-align: center;
+        padding-right: 170px;   
+    }
+
+    /* Mobile phone number display adjustments */
+    /* Hint: This is where you display the phone number for mobile users. 
+       Consider making it visible here. */
+    #mobile {
+        display: inline;    
+    }
+
+    /* Desktop phone number display adjustments */
+    /* Hint: For mobile screens, you might want to hide the desktop-specific content. */
+    #desktop {
+        
+    }
+}

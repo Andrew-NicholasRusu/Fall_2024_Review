@@ -1,0 +1,102 @@
+/* Global box-sizing rule */
+* {}
+
+/* Header, navigation, main content, and footer sections */
+header, nav, main, footer {}
+
+/* Styling for the body element */
+body {}
+
+/* Wrapper for centering and setting the width of the main content */
+#wrapper {}
+
+/* Header section styling */
+header {}
+
+/* Main page heading (h1) */
+h1 {}
+
+/* Navigation bar styling */
+nav {}
+
+/* Links inside the navigation bar */
+nav a {}
+
+/* Unvisited links in the navigation bar */
+nav a:link {}
+
+/* Visited links in the navigation bar */
+nav a:visited {}
+
+/* Hover effect for navigation links */
+nav a:hover {}
+
+/* Unordered list inside the navigation bar */
+nav ul {}
+
+/* Main content area */
+main {}
+
+/* Hero image section on the home page */
+#homehero {}
+
+/* Secondary heading (h2) */
+h2 {}
+
+/* Special styling for the "resort" text */
+.resort {}
+
+/* Footer section styling */
+footer {}
+
+/* Phone number display for mobile view */
+#mobile {}
+
+/* Phone number display for desktop view */
+#desktop {}
+
+/* Media query for screen widths less than or equal to 1024px */
+@media only screen and (max-width: 1024px) {
+    /* Body adjustments for smaller screens */
+    body {}
+    /* Wrapper adjustments for smaller screens */
+    #wrapper {}
+    /* Header adjustments for smaller screens */
+    h1 {}
+    /* Navigation adjustments for smaller screens */
+    nav {}
+    /* Navigation list items adjustments */
+    nav li {}
+    /* Navigation links adjustments */
+    nav a {}
+    /* Main content adjustments for smaller screens */
+    main {}
+    /* Footer adjustments for smaller screens */
+    footer {}
+    /* Hero image adjustments for smaller screens */
+    #homehero {}
+}
+
+/* Media query for screen widths less than or equal to 768px */
+@media only all and (max-width: 768px) {
+    /* Heading adjustments for smaller screens */
+    h1 {}
+    /* Navigation adjustments for smaller screens */
+    nav {}
+    /* Navigation links adjustments for smaller screens */
+    nav a {}
+    /* Navigation list adjustments for smaller screens */
+    nav ul {}
+    /* Navigation list items adjustments for smaller screens */
+    nav li {}
+    /* Main content adjustments for smaller screens */
+    main {}
+    /* Hide hero image for very small screens */
+    #homehero {}
+    /* Footer adjustments for smaller screens */
+    footer {}
+    /* Mobile phone number display adjustments */
+    #mobile {}
+    /* Desktop phone number display adjustments */
+    #desktop {}
+}
